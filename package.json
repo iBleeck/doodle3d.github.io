@@ -4,8 +4,9 @@
   "main": "src/js/index.js",
   "license": "MIT",
   "private": false,
+  "homepage": "https://ibleeck.github.io/doodle3d.github.io/",
   "scripts": {
-    "deploy": "npm run build && gh-pages -d dist",
+    "deploy": "npm run build && gh-pages -d dist -b gh-page2 -t",
     "build": "webpack --config webpack.config.js",
     "postinstall": "npm run dist:prepare",
     "start": "webpack-dev-server -w",
