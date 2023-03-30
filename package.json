@@ -6,7 +6,7 @@
   "private": false,
   "homepage": "https://ibleeck.github.io/doodle3d.github.io/",
   "scripts": {
-    "deploy": "npm run build && gh-pages -d dist -b gh-page2 -t",
+    "deploy": "npm run dist && gh-pages -d dist -b master -t",
     "build": "webpack --config webpack.config.js",
     "postinstall": "npm run dist:prepare",
     "start": "webpack-dev-server -w",
