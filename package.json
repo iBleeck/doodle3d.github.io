@@ -5,6 +5,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "deploy": "npm run build && gh-pages -d dist",
+    "build": "webpack --config webpack.config.js",
     "postinstall": "npm run dist:prepare",
     "start": "webpack-dev-server -w",
     "start-production": "NODE_ENV=production npm start",
@@ -87,5 +89,8 @@
     "whatwg-fetch": "^1.0.0",
     "worker-loader": "^0.8.1",
     "yml-loader": "^2.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
